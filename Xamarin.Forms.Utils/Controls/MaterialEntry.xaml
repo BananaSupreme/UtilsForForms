@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+	x:Class="Xamarin.Forms.Utils.Controls.MaterialEntry"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms">
+	<ContentView.Content>
+		<Grid Margin="0">
+			<skia:SKCanvasView x:Name="control" PaintSurface="OnControlPaintSurface" />
+			<Label
+				x:Name="label"
+				CharacterSpacing="1.75"
+				HorizontalTextAlignment="Center"
+				VerticalTextAlignment="Center" />
+			<Entry
+				x:Name="entry"
+				CharacterSpacing="1.75"
+				HorizontalTextAlignment="Center"
+				InputTransparent="true"
+				Opacity="0"
+				TextChanged="OnEntryTextChanged"
+				TextColor="Transparent" />
+
+			<BoxView
+				x:Name="tap"
+				IsVisible="true"
+				Color="Transparent">
+				<BoxView.GestureRecognizers>
+					<TapGestureRecognizer Tapped="OnControlTapped" />
+				</BoxView.GestureRecognizers>
+			</BoxView>
+		</Grid>
+	</ContentView.Content>
+</ContentView>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentView
+	x:Class="Celery.Controls.CheckboxWithTextControl"
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:controls="clr-namespace:Xamarin.Forms.Utils.Controls">
+	<ContentView.Content>
+		<Grid ColumnDefinitions="*,48" FlowDirection="RightToLeft">
+			<Grid.GestureRecognizers>
+				<TapGestureRecognizer Tapped="OnTapped" />
+			</Grid.GestureRecognizers>
+			<controls:AutoFitLabel
+				x:Name="DisplayedLabel"
+				HorizontalTextAlignment="Start"
+				VerticalTextAlignment="Center" />
+			<CheckBox
+				x:Name="DisplayedCheckbox"
+				Grid.Column="1"
+				CheckedChanged="OnCheckedChange"
+				HorizontalOptions="Center"
+				VerticalOptions="Center">
+				<VisualStateManager.VisualStateGroups>
+					<VisualStateGroupList>
+						<VisualStateGroup x:Name="CommonStates">
+							<VisualState x:Name="Normal">
+								<VisualState.Setters>
+									<Setter Property="Color" Value="{StaticResource Main}" />
+								</VisualState.Setters>
+							</VisualState>
+							<VisualState x:Name="IsChecked">
+								<VisualState.Setters>
+									<Setter Property="Color" Value="{StaticResource Secondry}" />
+								</VisualState.Setters>
+							</VisualState>
+						</VisualStateGroup>
+					</VisualStateGroupList>
+				</VisualStateManager.VisualStateGroups>
+			</CheckBox>
+		</Grid>
+	</ContentView.Content>
+</ContentView>
