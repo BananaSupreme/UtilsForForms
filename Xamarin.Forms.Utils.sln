@@ -9,7 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Utils.Android
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Utils.iOS", "Xamarin.Forms.Utils.iOS\Xamarin.Forms.Utils.iOS.csproj", "{069B377C-6735-4460-B539-6FC2B5CAD399}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Forms.Utils", "Xamarin.Forms.Utils\Xamarin.Forms.Utils.csproj", "{46FAE2CB-2453-44F4-BCFB-9493467381DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Forms.Utils", "Xamarin.Forms.Utils\Xamarin.Forms.Utils.csproj", "{46FAE2CB-2453-44F4-BCFB-9493467381DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AE3DB1D7-8656-4895-B813-9A35AECDC73A}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

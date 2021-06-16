@@ -72,6 +72,7 @@
   <ItemGroup>
     <Compile Include="Dependencies\FolderService.cs" />
     <Compile Include="Effects\OverScrollDisablerEffect.cs" />
+    <Compile Include="Helpers\LanguageWorkAround1866.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

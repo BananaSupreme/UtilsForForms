@@ -23,6 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Controls\Rotator\RotatorControl.xaml.cs">
+      <DependentUpon>RotatorControl.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Controls\Rotator\RotatorControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Controls\CheckboxWithTextControl.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

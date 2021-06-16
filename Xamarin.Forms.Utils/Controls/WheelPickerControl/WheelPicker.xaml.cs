@@ -183,7 +183,7 @@ namespace Xamarin.Forms.Utils.Controls.WheelPickerControl
 		public void ScrollToOffset( int offset, bool animate = true )
 		{
 			if ( ( SelectedItem == _baseItemList[0]
-				&& offset < 0 ) || ( SelectedItem == _baseItemList[_baseItemList.Count - 1]
+				&& offset < 0 ) || ( SelectedItem == _baseItemList.Last()
 				&& offset > 0 ) )
 			{
 				return;
